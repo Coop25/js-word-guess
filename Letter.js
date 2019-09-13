@@ -1,8 +1,8 @@
-module.exports.letter = function(letter){
+module.exports.letter = function (letter) {
     this.letter = letter;
     this.isGuessed = false;
-    this.display = function(){
-        switch(this.isGuessed){
+    this.display = function () {
+        switch (this.isGuessed) {
             case true:
                 return this.letter;
                 break;
@@ -11,8 +11,8 @@ module.exports.letter = function(letter){
                 break;
         }
     }
-    this.checkChar = function(guess){
-        if (guess === this.letter){
+    this.checkChar = function (guess) {
+        if (guess === this.letter) {
             this.isGuessed = true;
         }
         return;
