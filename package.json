@@ -1,0 +1,24 @@
+{
+  "name": "js-word-guess",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coop25/js-word-guess.git"
+  },
+  "author": "Cooper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Coop25/js-word-guess/issues"
+  },
+  "homepage": "https://github.com/Coop25/js-word-guess#readme",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "figlet": "^1.2.4",
+    "inquirer": "^7.0.0"
+  }
+}
