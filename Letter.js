@@ -12,9 +12,10 @@ module.exports.letter = function (letter) {
         }
     }
     this.checkChar = function (guess) {
-        if (guess === this.letter) {
+        if (guess.toLowerCase() === this.letter.toLowerCase()) {
             this.isGuessed = true;
+            return true;
         }
-        return;
+        return false;
     }
 }

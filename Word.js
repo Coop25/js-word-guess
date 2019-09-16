@@ -23,10 +23,28 @@ module.exports.word = function (word) {
         return wordStr;
     }
     this.checkLetter = function (guess) {
+        let isCorrect = false;
         this.letterArr.forEach(letter => {
             if (letter !== " ") {
-                letter.checkChar(guess);
+                let isLetter = letter.checkChar(guess);
+                if (!isCorrect) isCorrect = isLetter;
             }
         })
+        return isCorrect;
+    }
+    this.isWordGuessed = function(){
+        let count = 0;
+        this.letterArr.forEach(letter => {
+            if (letter !== " ") {
+                if(letter.isGuessed) count++;
+            } else {
+                count++;
+            }
+        })
+        if (count === this.letterArr.length){
+            return true;
+        } else {
+            return false;
+        }
     }
 }
