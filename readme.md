@@ -32,5 +32,5 @@ welcome to js word guess this is a node.js terminal application for guessing a r
   - `isWordGuessed` is a method that returns a boolean based on weather or not the word is guessed
 
 - `index.js` is the logic of the game and can be run using `node index.js`
-  - this randomly selects a word from an array and uses inquirer to ask the user for a guess of a letter
+  - this randomly selects a word from an array and uses [inquirer](https://www.npmjs.com/package/inquirer) to ask the user for a guess of a letter
   - this uses the npm package [figlet](https://www.npmjs.com/package/figlet) and [colors](https://www.npmjs.com/package/colors) for colored ascii text in the console to make the words look cool
