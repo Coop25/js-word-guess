@@ -1,4 +1,4 @@
-module.exports.letter = function (letter) {
+module.exports.Letter = function (letter) {
     this.letter = letter;
     this.isGuessed = false;
     this.display = function () {

@@ -1,6 +1,6 @@
-const Letter = require("./Letter").letter;
+const Letter = require("./Letter").Letter;
 
-module.exports.word = function (word) {
+module.exports.Word = function (word) {
     this.word = word;
     this.letterArr = [];
     word.split("").forEach(newLetter => {
